@@ -24,7 +24,7 @@ export const SideBar: React.FC<ISideBarProps> = () => {
     },
   ];
   return (
-    <aside className="flex flex-wrap w-72 h-screen bg-gray-100 py-20 ">
+    <aside className="flex flex-wrap w-72  bg-gray-100 py-20 ">
       <div className="px-10">
         <h1 className="text-lg text-center pb-5 font-semibold">
           Setup your account
