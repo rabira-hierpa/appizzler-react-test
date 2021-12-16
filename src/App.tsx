@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="flex">
       <SideBar />
-      <Lesson />
+      <Lesson textAreaPlaceholder="What will you cover in the lessons? What should students expect?" />
     </div>
   );
 }
