@@ -5,7 +5,24 @@ type ISideBarProps = {};
 
 export const SideBar: React.FC<ISideBarProps> = () => {
   const [isNavActive] = useState<boolean>(false);
-
+  const listNavItems = [
+    {
+      subMenuTitle: "Set lesson",
+      isSubMenuActive: true,
+    },
+    {
+      subMenuTitle: "Address",
+      isSubMenuActive: false,
+    },
+    {
+      subMenuTitle: "FAQ",
+      isSubMenuActive: false,
+    },
+    {
+      subMenuTitle: "Price",
+      isSubMenuActive: false,
+    },
+  ];
   return (
     <aside className="flex flex-wrap w-72 h-screen bg-gray-100 py-20 ">
       <div className="px-10">
@@ -17,7 +34,7 @@ export const SideBar: React.FC<ISideBarProps> = () => {
             order={1}
             isActive={true}
             navTitle="Lesson Details"
-            navListItems={["Set lesson", "Address", "FAQ", "Price"]}
+            navListItems={listNavItems}
           />
           <SidebarNavItem
             order={2}

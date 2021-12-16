@@ -13,7 +13,7 @@ interface ICheckBoxItemProps {
 }
 
 const ItemWithIcon: React.FC = ({ children }) => {
-  return <div className="flex space-x-4">{children}</div>;
+  return <div className="flex items-center space-x-2">{children}</div>;
 };
 
 const SectionTitle: React.FC<ISectionTitleProps> = (props) => {
@@ -26,14 +26,14 @@ const SectionTitle: React.FC<ISectionTitleProps> = (props) => {
         </ItemWithIcon>
         <ItemWithIcon>
           <img
-            className="w-4 h-4"
+            className="w-4 h-4 "
             src="https://img.icons8.com/android/24/4C54E6/plus.png"
             alt="plus icon"
           />
           <p className="text-indigo-500">Add item</p>
         </ItemWithIcon>
       </div>
-      <div className="border-solid border-2 border-gray-100 mt-5"></div>
+      <div className="border-solid border-2 border-gray-100 mt-4"></div>
     </React.Fragment>
   );
 };
