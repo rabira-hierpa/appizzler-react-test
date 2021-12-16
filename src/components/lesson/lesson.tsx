@@ -13,11 +13,11 @@ export const Lesson: React.FC<ILessonProps> = (props) => {
       <section className="pt-10">
         <p className="text-sm">Tell students about your session plan</p>
         <textarea
-          className="mt-2 border-solid border-2 border-gray-300 placeholder:pt-1 placeholder:pl-2  rounded-xl"
+          className="mt-2 pl-2 pt-1 border-solid border-2 border-gray-300 placeholder:pt-1 placeholder:pl-2  rounded-xl"
           name="lessonPlan"
           placeholder={props?.textAreaPlaceholder}
           rows={5}
-          cols={50}
+          cols={70}
         />
       </section>
       <section className="py-20">
