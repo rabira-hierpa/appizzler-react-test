@@ -4,7 +4,7 @@ import SidebarNavItem from "./components/sidebar-nav-item";
 type ISideBarProps = {};
 
 export const SideBar: React.FC<ISideBarProps> = () => {
-  const [isNavActive, setIsNavActive] = useState<boolean>(false);
+  const [isNavActive] = useState<boolean>(false);
 
   return (
     <aside className="flex flex-wrap w-72 h-screen bg-gray-100 py-20 ">
@@ -20,13 +20,13 @@ export const SideBar: React.FC<ISideBarProps> = () => {
             navListItems={["Set lesson", "Address", "FAQ", "Price"]}
           />
           <SidebarNavItem
-            isActive={isNavActive}
             order={2}
+            isActive={isNavActive}
             navTitle="Set your schedule"
           />
           <SidebarNavItem
-            isActive={isNavActive}
             order={3}
+            isActive={isNavActive}
             navTitle="Getting to know you"
           />
         </div>
